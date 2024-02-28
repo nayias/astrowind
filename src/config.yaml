@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Georg Pfahler
+  site: 'https://www.pfahler.it'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: Georg Pfahler
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Georg Pfahler - Professional Software Developer and DevSecOps."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Georg Pfahler
     images:
       - url: '~/assets/images/default.png'
         width: 1200

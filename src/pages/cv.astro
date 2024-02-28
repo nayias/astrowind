@@ -1,0 +1,102 @@
+---
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from "~/layouts/PageLayout.astro";
+
+const metadata = {
+  title: 'Curriculum Vitae'
+};
+---
+<Layout metadata={metadata}>
+    <Steps
+    id="work-experience"
+    title="Work experience"
+    items={[
+        {
+        title: 'Software / DevSecOps Engineer <br /> <span class="font-normal">dmTECH GmbH, Germany</span> <br /> <span class="text-sm font-normal">10/2018 - Present</span>',
+        description: `Backend Developer and DevSecOps Engineer for the "Onlinemarketing" and "Productsearch" products in the Customer Technology department (OnlineShop & mein dm-App from dm-drogerie markt). Responsible for IT security for the aforementioned products.`,
+        tasks: [
+            'Automation of infrastructure with Terraform.',
+            'Administration of Linux servers.',
+            'Development of microservices in Kotlin and Spring Boot.',
+            'Feature development in SAP Hybris.',
+            'CI/CD with Gitlab CI.',
+            'Data Engineering with Apache Airflow and Python.',
+            'Testing / Monitoring with CodeceptJS and Puppeteer.',
+            'Monitoring and alarming with Datadog.'
+        ],
+        icon: 'tabler:briefcase',
+        },
+        {
+        title: 'Software / DevOps Engineer <br /> <span class="font-normal">dm-drogerie markt GmbH + Co. KG / FILIADATA, Germany</span> <br /> <span class="text-sm font-normal">04/2018 - 09/2018</span>',
+        description: `Backend Developer and DevOps Engineer for the "Stammdatenmanagement" product.`,
+        tasks: [
+            'Automation of infrastructure with Ansible.',
+            'Administration of Linux servers.',
+            'Development of microservices in Java and Spring Boot.',
+            'Feature development in SAP Hybris.',
+            'CI/CD with Jenkins.'
+        ],
+        icon: 'tabler:briefcase',
+        },
+        {
+        title: 'Operations Developer <br /> <span class="font-normal">1&1 Internet SE, Germany</span> <br /> <span class="text-sm font-normal">04/2017 - 03/2018</span>',
+        //description: `Automation of infrastructure with Ansible. <br /> Provisioning and configuration of Linux and JBoss servers. <br /> Automation of software deployments. <br /> Continuous Delivery pipelines in GoCD. <br /> Development of tooling for operating business processes in Java and Python. <br /> Development of automated monitoring of business processes using ELK stacks, Java Spark, and Zabbix.`,
+        tasks: [
+            'Automation of infrastructure with Ansible.',
+            'Provisioning and configuration of Linux and JBoss servers.',
+            'Automation of software deployments.',
+            'Continuous Delivery pipelines in GoCD.',
+            'Development of tooling for operating business processes in Java and Python.',
+            'Development of automated monitoring of business processes using ELK stacks, Java Spark, and Zabbix.'
+        ],
+        icon: 'tabler:briefcase',
+        },
+        {
+        title: 'Business Process Operator <br /> <span class="font-normal">1&1 Internet SE, Germany</span> <br /> <span class="text-sm font-normal">01/2012 - 03/2017</span>',
+        //description: `Administration of Linux and JBoss servers. <br /> Operating business process management processes. <br /> Monitoring of business processes. <br /> Optimization of process workflows.`,
+        tasks: [
+            'Administration of Linux and JBoss servers.',
+            'Operating business process management processes.',
+            'Monitoring of business processes.',
+            'Optimization of process workflows.'
+        ],
+        icon: 'tabler:briefcase',
+        },
+        {
+        title: 'Support Engineer <br /> <span class="font-normal">Seeburger AG, Bretten, Germany</span> <br /> <span class="text-sm font-normal">08/2010 - 12/2011</span>',
+        //description: `BMC Service Desk Express administration and development. <br /> BMC KnowledgeManagement Express administration. <br /> SAP Solution Manager administration. <br /> Paper-2-ERP support.`,
+        tasks: [
+            'BMC Service Desk Express administration and development.',
+            'BMC KnowledgeManagement Express administration.',
+            'SAP Solution Manager administration.',
+            'Paper-2-ERP support.'
+        ],
+        icon: 'tabler:briefcase',
+        },
+        {
+        title: 'Student <br /> <span class="font-normal">Kardex Software GmbH, Wörth, Germany</span> <br /> <span class="text-sm font-normal">07/2006 - 10/2009</span>',
+        description: '',
+        icon: 'tabler:briefcase',
+        }
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <Steps
+  id="education"
+  title="Education"
+  items={[
+        {
+        title: 'Angewandte Informatik Ba.Sc. <br /> <span class="font-normal">Duale Hochschule, Karlsruhe, Germany</span> <br /> <span class="text-sm font-normal">10/2006 - 09/2009</span>',
+        description: '',
+        icon: 'tabler:school',
+        },
+        {
+        title: 'Informationswirtschaft <br /> <span class="font-normal">Hochschule, Karlsruhe, Germany</span> <br /> <span class="text-sm font-normal">10/2005 - 03/2006</span>',
+        description: '',
+        icon: 'tabler:school',
+        }
+  ]}
+  classes={{ container: 'max-w-3xl' }}
+/>
+</Layout>
