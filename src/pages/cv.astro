@@ -1,12 +1,22 @@
 ---
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from "~/layouts/PageLayout.astro";
+import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
   title: 'Curriculum Vitae'
 };
 ---
 <Layout metadata={metadata}>
+    <Hero
+    title="Curriculum Vitae"
+    image={{
+    //https://www.pexels.com/de-de/foto/ernten-sie-schwarzen-jobkandidaten-der-lebenslauf-an-hr-mitarbeiter-weitergibt-5673502/
+      src: '/lebenslauf.jpg',
+      alt: 'One Person is handing over a Curriculum Vitae to another Person.',
+    }} 
+    classes={{ container: 'max-w-3xl' }}
+  />
     <Steps
     id="work-experience"
     title="Work experience"
@@ -79,6 +89,7 @@ const metadata = {
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
+  <!--https://www.pexels.com/de-de/foto/raum-stuhl-lot-356065/-->
 
   <Steps
   id="education"
@@ -95,6 +106,10 @@ const metadata = {
         icon: 'tabler:school',
         }
   ]}
+  image={{
+    src: 'uni.jpeg',
+    alt: 'Steps image',
+  }}
   classes={{ container: 'max-w-3xl' }}
 />
 </Layout>
