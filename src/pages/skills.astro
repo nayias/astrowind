@@ -1,0 +1,79 @@
+---
+import Features3 from '~/components/widgets/Features3.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Layout from "~/layouts/PageLayout.astro";
+
+const metadata = {
+  title: 'Curriculum Vitae'
+};
+---
+<Layout metadata={metadata}>
+
+    <Features2
+    title="Skillset"
+    subtitle="Übersicht der aktuellen Technologien und Tools die ich in meiner täglichen Arbeit verwende."
+    columns={4}
+    defaultIcon="tabler:brand-docker"
+    items={[
+        {
+        title: 'Backend',
+        icon: 'tabler:code',
+        description: '<ul class="list-disc ml-4"><li>Java</li><li>Kotlin</li><li>Node.js</li><li>Python</li></ul>',
+        },
+        {
+        title: 'Frontend',
+        icon: 'tabler:code',
+        description: '<ul class="list-disc ml-4"><li>JS</li><li>Typescript</li><li>Astro</li><li>React</li></ul>',
+        },
+        {
+        title: 'Scripting',
+        icon: 'tabler:script',
+        description: '<ul class="list-disc ml-4"><li>Python</li><li>Bash</li><li>Node.js</li></ul>',
+        },
+        {
+        title: 'Conitinuous Integration / Delivery',
+        description: '<ul class="list-disc ml-4"><li>Gitlab CI</li><li>Github Actions</li><li>Azure Devops</li><li>Apache Airflow</li></ul>',
+        icon: 'tabler:brand-gitlab'
+        },
+        {
+        title: 'Infrastructure as Code',
+        icon: 'tabler:code',
+        description: '<ul class="list-disc ml-4"><li>Terraform</li><li>Ansible</li><li>AWS CDK</li></ul>',
+        },
+        {
+        title: 'Other Tooling',
+        icon: 'tabler:code',
+        description: '<ul class="list-disc ml-4"><li>Renovate</li><li>Snyk</li></ul>',
+        },
+        {
+        title: 'Cloud Provider',
+        description: '<ul class="list-disc ml-4"><li>GCP</li><li>AWS</li></ul>',
+        },
+        {
+        title: 'Virtualisation',
+        description: '<ul class="list-disc ml-4"><li>Docker</li><li>Proxmox</li><li>Kubernetes</li></ul>',
+        },
+        {
+        title: 'Monitoring',
+        icon: 'tabler:device-heart-monitor',
+        description: '<ul class="list-disc ml-4"><li>Datadog</li><li>ELK</li></ul>',
+        },
+        {
+        title: 'Network',
+        icon: 'tabler:network',
+        description: '<ul class="list-disc ml-4"><li>Unifi</li><li>DHCP</li><li>DNS</li></ul>',
+        },
+        {
+        title: 'Databases',
+        icon: 'tabler:database',
+        description: '<ul class="list-disc ml-4"><li>Postgres</li><li>MySQL</li><li>MariaDB</li></ul>',
+        },
+        {
+        title: 'Operating Systems',
+        icon: 'tabler:brand-windows',
+        description: '<ul class="list-disc ml-4"><li>Linux</li><li>Windows</li><li>Windows Server</li><li>MacOs</li></ul>',
+        }
+    ]}
+    />
+</Layout>

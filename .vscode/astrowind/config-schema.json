@@ -11,6 +11,9 @@
         "site": {
           "type": "string"
         },
+        "logo": {
+          "type": "string"
+        },
         "base": {
           "type": "string"
         },

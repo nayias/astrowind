@@ -1,22 +1,41 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 import Hero from "~/components/widgets/Hero.astro";
+import Content from "~/components/widgets/Content.astro";
 const metadata = {
   title: 'pfahler.iT - Home'
 };  
 ---
 
 <Layout metadata={metadata}>
-      <Hero
+    <Hero
         id="hero"
         title="Georg Pfahler"
-        tagline="IT Services & Consulting"
-        actions={[{ variant: "primary", target: '_blank', text: 'Contact me', href: '/' }]}
+        actions={[{ variant: "primary", target: '_blank', text: 'Contact me', href: 'mailto:georg@pfahler.it' }]}
       >
         <Fragment slot="subtitle">
-          I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-          from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-          captivating realities.
+            leidenschaftlicher DevSecOps Engineer mit dem Fokus auf einfache Lösungen für komplexe Probleme. 
         </Fragment>
-      </Hero>
+    </Hero>
+
+   <Content
+      id="about"
+      image={{
+        src: '/profile.webp',
+        alt: 'Georg Pfahler',
+        loading: 'eager',
+      }} 
+    >
+      <Fragment slot="content">
+        <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Über mich</h2>
+        <p>Hallo! Ich bin Georg Pfahler bin hauptberuflich DevSecOps Engineer mit einem breitgefächerten IT-Wissen und 14 Jahren beruflicher Erfahrung in der Technologiebranche. </p>
+        <br>
+        <p>Ich bin dein Ansprechpartner, wenn es darum geht, die IT kleiner Unternehmen zu optimieren und effizient zu gestalten.</p>
+      </Fragment>
+  
+      <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      </Fragment>
+    </Content>
+
 </Layout>  

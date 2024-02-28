@@ -5,12 +5,14 @@ export const headerData = {
     {
       text: 'Home',
       href: getPermalink('/'),
-      
     },
     {
       text: 'Curriculium Vitea',
       href: getPermalink('/cv'),
-      
+    },
+    {
+      text: 'Skillset',
+      href: getPermalink('/skills'),
     }
   ]
 };
@@ -28,9 +30,7 @@ export const footerData = {
     {
       title: 'Kontakt',
       links: [
-        { text: 'Impressum', href: '/impressum' },
-        { text: 'Datenschutzerklärung', href: '/dse' },
-        { text: 'Kontakt', href: '/contact' },
+        { text: 'Email', href: 'mailto:georg@pfahler.it' },
       ],
     },
   ],
