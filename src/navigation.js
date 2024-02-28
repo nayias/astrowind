@@ -35,6 +35,6 @@ export const footerData = {
     },
   ],
   socialLinks: [
-    { ariaLabel: 'Xing', icon: 'tabler:brand-xing', href: 'https://xing.com/pfahler.georg' },
+    { ariaLabel: 'Xing', icon: 'tabler:brand-xing', href: 'https://www.xing.com/profile/Georg_Pfahler/' },
   ],
 };
