@@ -5,28 +5,28 @@ import Header from '~/components/widgets/Header.astro';
 const metadata = {
   title: 'Georg Pfahler iT',
   ignoreTitleTemplate: true,
-};  
+};
 ---
 
 <Layout metadata={metadata}>
-    <!-- Hero Widget ******************* -->
-    <Fragment slot="announcement"></Fragment>
-    <Fragment slot="header">
-        <Header
-          links={[
-            { text: 'Home', href: '#' },
-            { text: 'About', href: '/pricing' },
-            { text: 'CV', href: '#resume' },
-            { text: 'Porfolio', href: '#porfolio' },
-          ]}
-          actions={[
-            {
-              text: 'Contact me',
-              href: '#',
-            },
-          ]}
-          isSticky
-          showToggleTheme
-        />
-      </Fragment>
+  <!-- Hero Widget ******************* -->
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '#' },
+        { text: 'About', href: '/pricing' },
+        { text: 'CV', href: '#resume' },
+        { text: 'Porfolio', href: '#porfolio' },
+      ]}
+      actions={[
+        {
+          text: 'Contact me',
+          href: '#',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
 </Layout>

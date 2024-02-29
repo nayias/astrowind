@@ -5,7 +5,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ### Diensteanbieter
 
-Georg Pfahler   
+Georg Pfahler  
 Scheffelstr. 4  
 76646 Bruchsal,Germany
 

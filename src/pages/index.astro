@@ -1,44 +1,51 @@
 ---
-import Layout from "~/layouts/PageLayout.astro";
-import Hero from "~/components/widgets/Hero.astro";
-import Content from "~/components/widgets/Content.astro";
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
 const metadata = {
-  title: '| pfahler.dev - Home'
-};  
+  title: '| pfahler.dev - Home',
+};
 ---
 
 <Layout metadata={metadata}>
-    <Hero
-        id="hero"
-        title="Georg Pfahler"
-        actions={[{ variant: "primary", target: '_blank', text: 'Contact me', href: 'mailto:georg@pfahler.it' }]}
-      >
-        <Fragment slot="subtitle">
-            DevSecOps Engineer mit dem Fokus auf einfache Lösungen für komplexe Probleme. 
-        </Fragment>
-    </Hero>
+  <Hero
+    id="hero"
+    title="Georg Pfahler"
+    actions={[{ variant: 'primary', target: '_blank', text: 'Contact me', href: 'mailto:georg@pfahler.it' }]}
+  >
+    <Fragment slot="subtitle"> DevSecOps Engineer mit dem Fokus auf einfache Lösungen für komplexe Probleme. </Fragment>
+  </Hero>
 
-   <Content
-      id="about"
-      image={{
-        src: '~/assets/images/profile.webp',
-        alt: 'Georg Pfahler',
-        loading: 'eager',
-      }} 
-    >
-      <Fragment slot="content">
-        <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Über mich</h2>
-        <p>Hallo!</p> 
-        <p>Mein Name ist <b>Georg Pfahler</b> und bin hauptberuflich stolzer Vater eines kleinen Jungen sowie <b>DevSecOps</b> Engineer bei dmTECH der IT-Tochtergesellschaft von dm-drogerie markt GmbH.</p>
-        <br>
-        <p>Durch meine Leidenschaft zur IT konnte ich mir in meinem bisherigen Leben ein sehr breitgefächertes IT-Wissen aneigenen und bin nun seit 14 Jahren beruflich in der Technologiebranche unterwegs. </p>
-        <br>
-        <p>Ich bin Ihr Ansprechpartner, wenn es darum geht, IT Systeme und Prozesse zu optimieren und effizient zu gestalten.</p>
-      </Fragment>
-  
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </Content>
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/profile.webp',
+      alt: 'Georg Pfahler',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Über mich</h2>
+      <p>Hallo!</p>
+      <p>
+        Mein Name ist <b>Georg Pfahler</b> und bin hauptberuflich stolzer Vater eines kleinen Jungen sowie <b
+          >DevSecOps</b
+        > Engineer bei dmTECH der IT-Tochtergesellschaft von dm-drogerie markt GmbH.
+      </p>
+      <br />
+      <p>
+        Durch meine Leidenschaft zur IT konnte ich mir in meinem bisherigen Leben ein sehr breitgefächertes IT-Wissen
+        aneigenen und bin nun seit 14 Jahren beruflich in der Technologiebranche unterwegs.
+      </p>
+      <br />
+      <p>
+        Ich bin Ihr Ansprechpartner, wenn es darum geht, IT Systeme und Prozesse zu optimieren und effizient zu
+        gestalten.
+      </p>
+    </Fragment>
 
-</Layout>  
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#7be3e5] to-[#cff4f5] dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+</Layout>

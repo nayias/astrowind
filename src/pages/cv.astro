@@ -1,117 +1,124 @@
 ---
 import Steps from '~/components/widgets/Steps.astro';
-import Layout from "~/layouts/PageLayout.astro";
+import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
-  title: 'Curriculum Vitae'
+  title: 'Curriculum Vitae',
 };
 ---
+
 <Layout metadata={metadata}>
-    <Hero
+  <Hero
     title="Curriculum Vitae"
     image={{
-    //https://www.pexels.com/de-de/foto/ernten-sie-schwarzen-jobkandidaten-der-lebenslauf-an-hr-mitarbeiter-weitergibt-5673502/
+      //https://www.pexels.com/de-de/foto/ernten-sie-schwarzen-jobkandidaten-der-lebenslauf-an-hr-mitarbeiter-weitergibt-5673502/
       src: '~/assets/images/lebenslauf.jpg',
       alt: 'One Person is handing over a Curriculum Vitae to another Person.',
-    }} 
+    }}
     classes={{ container: 'max-w-3xl' }}
   />
-    <Steps
+  <Steps
     id="work-experience"
     title="Berufserfahrung"
     items={[
-        {
-        title: 'DevSecOps Engineer <br /> <span class="font-normal">@ dmTECH GmbH, Germany</span> <br /> <span class="text-sm font-normal">10/2018 - Present</span>',
+      {
+        title:
+          'DevSecOps Engineer <br /> <span class="font-normal">@ dmTECH GmbH, Germany</span> <br /> <span class="text-sm font-normal">10/2018 - Present</span>',
         description: `Backend Developer und DevSecOps Engineer für die Produkte "Onlinemarketing" und "Productsearch" im Bereich Customer Technology (OnlineShop & mein dm-App von dm-drogerie markt). Zuständig für die IT-Security im Bereich der vorher genannten Produkte.`,
         tasks: [
-            'Entwicklung und Betrieb von Microservices in Kotlin, Spring Boot und Python',
-            'CI/CD mit Gitlab CI',
-            'Automatisierung der GCP Cloud Infrastruktur mit Terraform',
-            'Data Engineering mit Apache Airflow und Python',
-            'Testing / Monitoring mit CodeceptJS und Puppeteer',
-            'Monitoring und Alarming mit Datadog'
+          'Entwicklung und Betrieb von Microservices in Kotlin, Spring Boot und Python',
+          'CI/CD mit Gitlab CI',
+          'Automatisierung der GCP Cloud Infrastruktur mit Terraform',
+          'Data Engineering mit Apache Airflow und Python',
+          'Testing / Monitoring mit CodeceptJS und Puppeteer',
+          'Monitoring und Alarming mit Datadog',
         ],
         icon: 'tabler:briefcase',
-        },
-        {
-        title: 'DevOps Engineer <br /> <span class="font-normal">@ dm-drogerie markt GmbH + Co. KG / FILIADATA, Germany</span> <br /> <span class="text-sm font-normal">04/2018 - 09/2018</span>',
+      },
+      {
+        title:
+          'DevOps Engineer <br /> <span class="font-normal">@ dm-drogerie markt GmbH + Co. KG / FILIADATA, Germany</span> <br /> <span class="text-sm font-normal">04/2018 - 09/2018</span>',
         description: `Backend Developer and DevOps Engineer for the "Stammdatenmanagement" product.`,
         tasks: [
-            'Automatisierung der Infrastruktur mit Ansible',
-            'Administration von Linux Servern',
-            'Entwickeln von Microservices in Java und Spring Boot',
-            'Feature Entwicklung in SAP Hybris',
-            'CI/CD mit Jenkins'
+          'Automatisierung der Infrastruktur mit Ansible',
+          'Administration von Linux Servern',
+          'Entwickeln von Microservices in Java und Spring Boot',
+          'Feature Entwicklung in SAP Hybris',
+          'CI/CD mit Jenkins',
         ],
         icon: 'tabler:briefcase',
-        },
-        {
-        title: 'Operations Developer <br /> <span class="font-normal">@ 1&1 Internet SE, Germany</span> <br /> <span class="text-sm font-normal">04/2017 - 03/2018</span>',
+      },
+      {
+        title:
+          'Operations Developer <br /> <span class="font-normal">@ 1&1 Internet SE, Germany</span> <br /> <span class="text-sm font-normal">04/2017 - 03/2018</span>',
         //description: `Automation of infrastructure with Ansible. <br /> Provisioning and configuration of Linux and JBoss servers. <br /> Automation of software deployments. <br /> Continuous Delivery pipelines in GoCD. <br /> Development of tooling for operating business processes in Java and Python. <br /> Development of automated monitoring of business processes using ELK stacks, Java Spark, and Zabbix.`,
         tasks: [
-            'Automatisierung der Infrastruktur mit Ansible',
-            'Bereitstellung von Ansible Module unteranderem zur Provisionierung und Konfiguration von Linux und JBoss Servern',
-            'Continious Delivery Pipelines in GoCD',
-            'Entwickeln von Tooling für das Operating von Geschäftsprozessen in Java und Python',
-            'Entwickeln eines automatisierten Monitorings von Geschäftsprozessen mit Hilfe von ELK-Stacks, Java Spark und Zabbix'
-
+          'Automatisierung der Infrastruktur mit Ansible',
+          'Bereitstellung von Ansible Module unteranderem zur Provisionierung und Konfiguration von Linux und JBoss Servern',
+          'Continious Delivery Pipelines in GoCD',
+          'Entwickeln von Tooling für das Operating von Geschäftsprozessen in Java und Python',
+          'Entwickeln eines automatisierten Monitorings von Geschäftsprozessen mit Hilfe von ELK-Stacks, Java Spark und Zabbix',
         ],
         icon: 'tabler:briefcase',
-        },
-        {
-        title: 'Business Process Operator <br /> <span class="font-normal">@ 1&1 Internet SE, Germany</span> <br /> <span class="text-sm font-normal">01/2012 - 03/2017</span>',
+      },
+      {
+        title:
+          'Business Process Operator <br /> <span class="font-normal">@ 1&1 Internet SE, Germany</span> <br /> <span class="text-sm font-normal">01/2012 - 03/2017</span>',
         //description: `Administration of Linux and JBoss servers. <br /> Operating business process management processes. <br /> Monitoring of business processes. <br /> Optimization of process workflows.`,
         tasks: [
-            'Administration von Linux und JBoss Servern',
-            'Operating von Business Process Management - Prozessen',
-            'Monitoring von Geschäftsprozessen',
-            'Optimierung von Prozessabläufen'
+          'Administration von Linux und JBoss Servern',
+          'Operating von Business Process Management - Prozessen',
+          'Monitoring von Geschäftsprozessen',
+          'Optimierung von Prozessabläufen',
         ],
         icon: 'tabler:briefcase',
-        },
-        {
-        title: 'Support Engineer <br /> <span class="font-normal">@ Seeburger AG, Bretten, Germany</span> <br /> <span class="text-sm font-normal">08/2010 - 12/2011</span>',
+      },
+      {
+        title:
+          'Support Engineer <br /> <span class="font-normal">@ Seeburger AG, Bretten, Germany</span> <br /> <span class="text-sm font-normal">08/2010 - 12/2011</span>',
         //description: `BMC Service Desk Express administration and development. <br /> BMC KnowledgeManagement Express administration. <br /> SAP Solution Manager administration. <br /> Paper-2-ERP support.`,
         tasks: [
-            'BMC Service Desk Express administration und Entwicklung.',
-            'BMC KnowledgeManagement Express Administration.',
-            'SAP Solution Manager Administration.',
-            'Paper-2-ERP Support.'
+          'BMC Service Desk Express administration und Entwicklung.',
+          'BMC KnowledgeManagement Express Administration.',
+          'SAP Solution Manager Administration.',
+          'Paper-2-ERP Support.',
         ],
         icon: 'tabler:briefcase',
-        },
-        {
-        title: 'Student <br /> <span class="font-normal">@ Kardex Software GmbH, Wörth, Germany</span> <br /> <span class="text-sm font-normal">07/2006 - 10/2009</span>',
+      },
+      {
+        title:
+          'Student <br /> <span class="font-normal">@ Kardex Software GmbH, Wörth, Germany</span> <br /> <span class="text-sm font-normal">07/2006 - 10/2009</span>',
         description: '',
         icon: 'tabler:briefcase',
-        }
+      },
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
   <!--https://www.pexels.com/de-de/foto/raum-stuhl-lot-356065/-->
 
   <Steps
-  id="education"
-  title="Education"
-  isReversed="true"
-  image={{
-    src: '~/assets/images/uni.jpeg',
-    alt: 'Steps image',
-  }}
-  items={[
-        {
-        title: 'Angewandte Informatik Ba.Sc. <br /> <span class="font-normal">@ Duale Hochschule, Karlsruhe, Germany</span> <br /> <span class="text-sm font-normal">10/2006 - 09/2009</span>',
+    id="education"
+    title="Education"
+    isReversed="true"
+    image={{
+      src: '~/assets/images/uni.jpeg',
+      alt: 'Steps image',
+    }}
+    items={[
+      {
+        title:
+          'Angewandte Informatik Ba.Sc. <br /> <span class="font-normal">@ Duale Hochschule, Karlsruhe, Germany</span> <br /> <span class="text-sm font-normal">10/2006 - 09/2009</span>',
         description: '',
         icon: 'tabler:school',
-        },
-        {
-        title: 'Informationswirtschaft <br /> <span class="font-normal">@ Hochschule, Karlsruhe, Germany</span> <br /> <span class="text-sm font-normal">10/2005 - 03/2006</span>',
+      },
+      {
+        title:
+          'Informationswirtschaft <br /> <span class="font-normal">@ Hochschule, Karlsruhe, Germany</span> <br /> <span class="text-sm font-normal">10/2005 - 03/2006</span>',
         description: '',
         icon: 'tabler:school',
-        }
-  ]}
-
-  classes={{ container: 'max-w-3xl' }}
-/>
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
 </Layout>

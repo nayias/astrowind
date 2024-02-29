@@ -13,8 +13,8 @@ export const headerData = {
     {
       text: 'Skillset',
       href: getPermalink('/skills'),
-    }
-  ]
+    },
+  ],
 };
 
 export const footerData = {
@@ -29,12 +29,8 @@ export const footerData = {
     },
     {
       title: 'Kontakt',
-      links: [
-        { text: 'Email', href: 'mailto:georg@pfahler.it' },
-      ],
+      links: [{ text: 'Email', href: 'mailto:georg@pfahler.it' }],
     },
   ],
-  socialLinks: [
-    { ariaLabel: 'Xing', icon: 'tabler:brand-xing', href: 'https://www.xing.com/profile/Georg_Pfahler/' },
-  ],
+  socialLinks: [{ ariaLabel: 'Xing', icon: 'tabler:brand-xing', href: 'https://www.xing.com/profile/Georg_Pfahler/' }],
 };

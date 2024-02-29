@@ -13,7 +13,7 @@ Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
 Georg Pfahler  
 Scheffelstr. 4  
-76646 Bruchsal  
+76646 Bruchsal
 
 Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).
 
