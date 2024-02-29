@@ -1,7 +1,7 @@
 site:
   name: pfahler.dev
   site: 'https://www.pfahler.dev'
-  logo: '{</>}'
+  logo: '</> |'
   base: '/'
   trailingSlash: false
 
@@ -12,7 +12,7 @@ metadata:
   title:
     default: Georg Pfahler
     template: '%s — AstroWind'
-  description: "\U0001F680 Georg Pfahler - Professional Software Developer and DevSecOps."
+  description: "</> Georg Pfahler - Professional DevSecOps Engineer"
   robots:
     index: true
     follow: true

@@ -2,6 +2,7 @@
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from "~/layouts/PageLayout.astro";
 import Hero from '~/components/widgets/Hero.astro';
+import cvImage from '~/assets/images/profile.webp';
 
 const metadata = {
   title: 'Curriculum Vitae'
@@ -12,17 +13,17 @@ const metadata = {
     title="Curriculum Vitae"
     image={{
     //https://www.pexels.com/de-de/foto/ernten-sie-schwarzen-jobkandidaten-der-lebenslauf-an-hr-mitarbeiter-weitergibt-5673502/
-      src: '/lebenslauf.jpg',
+      src: '~/assets/images/lebenslauf.jpg',
       alt: 'One Person is handing over a Curriculum Vitae to another Person.',
     }} 
     classes={{ container: 'max-w-3xl' }}
   />
     <Steps
     id="work-experience"
-    title="Work experience"
+    title="Berufserfahrung"
     items={[
         {
-        title: 'Software / DevSecOps Engineer <br /> <span class="font-normal">@ dmTECH GmbH, Germany</span> <br /> <span class="text-sm font-normal">10/2018 - Present</span>',
+        title: 'DevSecOps Engineer <br /> <span class="font-normal">@ dmTECH GmbH, Germany</span> <br /> <span class="text-sm font-normal">10/2018 - Present</span>',
         description: `Backend Developer und DevSecOps Engineer für die Produkte "Onlinemarketing" und "Productsearch" im Bereich Customer Technology (OnlineShop & mein dm-App von dm-drogerie markt). Zuständig für die IT-Security im Bereich der vorher genannten Produkte.`,
         tasks: [
             'Entwicklung und Betrieb von Microservices in Kotlin, Spring Boot und Python',
@@ -35,7 +36,7 @@ const metadata = {
         icon: 'tabler:briefcase',
         },
         {
-        title: 'Software / DevOps Engineer <br /> <span class="font-normal">@ dm-drogerie markt GmbH + Co. KG / FILIADATA, Germany</span> <br /> <span class="text-sm font-normal">04/2018 - 09/2018</span>',
+        title: 'DevOps Engineer <br /> <span class="font-normal">@ dm-drogerie markt GmbH + Co. KG / FILIADATA, Germany</span> <br /> <span class="text-sm font-normal">04/2018 - 09/2018</span>',
         description: `Backend Developer and DevOps Engineer for the "Stammdatenmanagement" product.`,
         tasks: [
             'Automatisierung der Infrastruktur mit Ansible',
@@ -94,6 +95,11 @@ const metadata = {
   <Steps
   id="education"
   title="Education"
+  isReversed="true"
+  image={{
+    src: '~/assets/images/uni.jpeg',
+    alt: 'Steps image',
+  }}
   items={[
         {
         title: 'Angewandte Informatik Ba.Sc. <br /> <span class="font-normal">@ Duale Hochschule, Karlsruhe, Germany</span> <br /> <span class="text-sm font-normal">10/2006 - 09/2009</span>',
@@ -106,10 +112,7 @@ const metadata = {
         icon: 'tabler:school',
         }
   ]}
-  image={{
-    src: '/uni.jpeg',
-    alt: 'Steps image',
-  }}
+
   classes={{ container: 'max-w-3xl' }}
 />
 </Layout>
