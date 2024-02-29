@@ -94,7 +94,11 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
+  >
+  <Fragment slot="bg">
+    <div class="absolute bg-gradient-to-b from-[#F1FCFC] via-[#bff1f2] to-[#F1FCFC] dark:bg-none dark:bg-page inset-0"></div>
+  </Fragment>
+  </Steps>
   <!--https://www.pexels.com/de-de/foto/raum-stuhl-lot-356065/-->
 
   <Steps
@@ -120,5 +124,9 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute bg-gradient-to-b from-[#F1FCFC] via-[#bff1f2] to-[#F1FCFC] dark:bg-none dark:bg-page inset-0"></div>
+    </Fragment>
+  </Steps>
 </Layout>
