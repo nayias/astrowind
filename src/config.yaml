@@ -1,7 +1,7 @@
 site:
   name: pfahler.dev
   site: 'https://www.pfahler.dev'
-  logo: '</> |'
+  logo: '~/assets/faviconx/favicon.svg'
   base: '/'
   trailingSlash: false
 
@@ -12,7 +12,7 @@ metadata:
   title:
     default: Georg Pfahler
     template: '%s — AstroWind'
-  description: "</> Georg Pfahler - Professional DevSecOps Engineer"
+  description: "Georg Pfahler - DevSecOps Engineer"
   robots:
     index: true
     follow: true
@@ -70,7 +70,7 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'custom' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   tokens:
     default:
@@ -103,6 +103,25 @@ ui:
         secondary: rgb(30 58 138)
         accent: rgb(135 77 2267)
         info: rgb(58 191 248)
+        success: rgb(54 211 153)
+        warning: rgb(251 189 35)
+        error: rgb(248 114 114)
+        link: var(--ph-color-primary)
+        linkActive: var(--ph-color-link)
+    custom:
+      fonts:
+        sans: InterVariable
+        serif: var(--ph-font-sans)
+        heading: var(--ph-font-sans)
+      colors:
+        default: rgb(123,227,229)
+        heading: rgb(0 0 0)
+        muted: rgb(40 40 40)
+        bgPage: rgb(123,227,229)
+        primary: rgb(0 124 220)
+        secondary: rgb(30 58 138)
+        accent: rgb(109 40 217)
+        info: rgb(119 182 234)
         success: rgb(54 211 153)
         warning: rgb(251 189 35)
         error: rgb(248 114 114)

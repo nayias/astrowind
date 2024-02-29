@@ -3,7 +3,7 @@ title: 'Datenschutzerklärung'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+_Last updated_: Februar 23, 2024
 
 ## Allgemeiner Hinweis und Pflichtinformationen
 
